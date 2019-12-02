@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  
+  <title>Enfermedades respiratorias</title>
+
+  <!-- Theme CSS -->
+  <link href="css/estilo.css" rel="stylesheet">
+  
+  <!-- Fuente -->  
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body class="contenido-preg">
+    <div class="top-preg" style="text-align: center;">
+        <h2>Seleccione el nivel de molestia de cada síntoma.</h2>
+        <div class="emoji" id="emoji"></div>
+        <div class="pregunta centrar-gen" > <h2 id="pregunta">Fiebre</h2></div>
+        <div class="rango-preg">
+            <div class='emptyprogress'></div>
+            <div class='progress'></div>
+            <div class='indicator'></div>
+        </div>
+        <div class='boton-sig' id="botonPreg" onclick="cambiarSintoma()">
+            Siguiente
+        </div>
+        
+    </div>
+    <div class="bajo"><p>Bajo</p></div>
+    <div class="alto"><p>Alto</p></div>
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    </body>
+    </html>
