@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)file:///Users/JohnReb/Desktop/enfermedades%20respiratorias/pregunta.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	
+	<link rel="stylesheet" href="./Diagnostico_files/styles.css">
+	<link rel="stylesheet" href="./Diagnostico_files/swiper.css">
+	<link rel="stylesheet" href="./Diagnostico_files/slider.css">
+	<link href="./Diagnostico_files/sb-admin.css" rel="stylesheet">
+	<script type="text/javascript" src="./Diagnostico_files/swiper.js"></script>
+	<script type="text/javascript" src="./Diagnostico_files/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="./Diagnostico_files/funciones.js"></script>
+	<script type="text/javascript" src="./Diagnostico_files/alergiasMatriz.js"></script>
+	<script type="text/javascript" src="./Diagnostico_files/maxMin.js"></script>
+	<link href="./Diagnostico_files/css" rel="stylesheet">
+	<link rel="stylesheet" href="./Diagnostico_files/font-awesome.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  
+  <title>Diagnostico</title>
+
+  <!-- Theme CSS -->
+  <link href="./Diagnostico_files/estilo.css" rel="stylesheet">
+  
+  <!-- Fuente -->  
+  <link href="./Diagnostico_files/css(1)" rel="stylesheet">
+</head>
+
+<body class="contenido-preg">
+  <div class="area-dolor">
+		<h3 style="text-align:center;">Area de dolor</h3>
+			<div style="width: 100%;">
+				<div style="height: 100%;" class="swiper-wrapper">
+					<div onclick="change_photo(&#39;Cabeza&#39;)" style="height: 20%; margin-top: 5px; position: relative; margin-left: 10%;" class="swiper-slide tarjetas-opciones">Cabeza</div>
+					<div onclick="change_photo(&#39;Pecho&#39;)" style="height: 20%; margin-top: 5px; position: relative; margin-left: 10%;" class="swiper-slide tarjetas-opciones">Torso</div>
+					<div onclick="change_photo(&#39;GeneralCuerpo&#39;)" style="height: 20%; margin-top: 5px; position: relative; margin-left: 10%;" class="swiper-slide tarjetas-opciones">Cuerpo general</div>
+				</div>
+				<!-- Add Pagination -->
+				<div style="margin-bottom: 30px" class="swiper-pagination"></div>
+			</div>
+    </div>
+    <div class="top-preg">
+			<div style="position: relative; width: 100%; height: 15%;">
+					<div id="dolorEspecifico" style="height: 90%; align-items: center; position: relative;" class="swiper-wrapper"><div style="height: 100px; " onclick="getQuestions(&#39;Pecho&#39;, &#39;Pecho&#39;)" class="swiper-slide tarjetas-opciones">Pecho</div></div>
+			</div>
+			<div style="width: 100%; height: 100px;">
+					<div style="position: relative; margin-top: -7%;">
+							<div style="height:auto !important" class="swiper-container swiper-container3 swiper-container-horizontal swiper-container-wp8-horizontal">
+									<div id="preguntas" class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2360px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 1150px; margin-right: 30px;">
+											<div class="preguntas">
+												<h1>Selecciona un área de dolorsh</h1>
+											</div>
+										</div>
+										<div class="swiper-slide swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 1150px; margin-right: 30px;">
+											<div class="preguntas">
+												<h1>Selecciona un área de dolorsh</h1>
+											</div>
+										</div>
+									<div class="swiper-slide swiper-slide-duplicate swiper-slide-active swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 1150px; margin-right: 30px;">
+											<div class="preguntas">
+												<h1>Selecciona un área de dolorsh</h1>
+											</div>
+										</div></div>
+									<!-- <div class="swiper-pagination swiper-pagination3"></div> -->
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>
+					</div>
+					<div class="emoji" id="emoji" style="background: url(&quot;img/8.png&quot;) 0% 0% / cover; opacity: 0;"></div>
+					<div class="rango-preg">
+							<div class="emptyprogress"></div>
+							<div class="progress" style="width: 569px;"></div>
+							<div class="indicator" style="left: 569px;"></div>
+					</div>
+					<div class="boton-sig" id="botonPreg" onclick="cambiarSintoma()">
+							Siguiente
+					</div>
+			</div>
+    </div>
+    <div class="bajo"><p>Bajo</p></div>
+    <div class="alto"><p>Alto</p></div>        
+    
+    <script type="text/javascript" src="./Diagnostico_files/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./Diagnostico_files/main.js"></script>
+
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container-desc', {
+          effect: 'flip',
+          grabCursor: true,
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+  
+        var swiper = new Swiper('.swiper-container3', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination3',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+  
+        var swiper = new Swiper('.swiper-container-enf', {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+    </script>
+    <script type="text/javascript" src="./Diagnostico_files/slider.js"></script>
+    
+    </body></html>

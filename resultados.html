@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Enfermedades respiratorias</title>
+
+  <!-- Theme CSS -->
+  <link href="css/estilo.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <!-- Fuente -->  
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="body-result">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active" style="width: 100%; height: 90vh;">
+									<div class="body-result-der">
+											<h1>Resultado general</h1>
+											<h2 id="enfR">Gripe</h2>
+											<h3>Origen</h3>
+											<p id="origen">En la mayor parte de los casos basta con un tratamiento sintomático de la fiebre, los dolores musculares y el dolor de cabeza, utilizando preferentemente paracetamol.
+															Es aconsejable el reposo relativo y una buena hidratación. En los últimos años se han desarrollado algunos fármacos antivirales específicos para el virus de la gripe, primero amantadina y rimantadina, y, más recientemente, zanamivir y oseltamivir.
+															</p>
+											<h3>Tratamineto</h3>
+											<p id="tratR">En la mayor parte de los casos basta con un tratamiento sintomático de la fiebre, los dolores musculares y el dolor de cabeza, utilizando preferentemente paracetamol.
+															Es aconsejable el reposo relativo y una buena hidratación. En los últimos años se han desarrollado algunos fármacos antivirales específicos para el virus de la gripe, primero amantadina y rimantadina, y, más recientemente, zanamivir y oseltamivir.
+															</p>
+											<h3>Medicamento</h3>
+											<p id="medR">
+															Paracetamol
+															Antigripales
+											</p>
+									</div>
+							</div>
+							<div class="carousel-item" style="width: 100%; height: 90vh;">
+									<div class="body-result-isq">
+											<div class="result-esp">
+													<div class="result-esp-mini">
+															Porcentaje segun las enfermedades seleccionadas.
+															<div class="cont-circulo">
+																	<p id="enf1">Gripe</p>
+																	<div class="circulo circulo1" id="probEnf1">15%</div>
+																	<p id="enf2">Neumonia</p>
+																	<div class="circulo circulo2" id="probEnf2">50%</div>
+															</div>
+													</div>
+											</div>
+									</div>
+							</div>
+							<a style="align-content: center;" href="index.html"><div class="boton-regreso">Inicio</div></a>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+			
+					</div>
+        <!--<div class="body-result-der">
+
+            <h1>Resultado general</h1>
+            <h2 id="enfR">Gripe</h2>
+            <h3>Origen</h3>
+            <p id="origen">En la mayor parte de los casos basta con un tratamiento sintomático de la fiebre, los dolores musculares y el dolor de cabeza, utilizando preferentemente paracetamol.
+
+                    Es aconsejable el reposo relativo y una buena hidratación. En los últimos años se han desarrollado algunos fármacos antivirales específicos para el virus de la gripe, primero amantadina y rimantadina, y, más recientemente, zanamivir y oseltamivir.
+                    </p>
+            <h3>Tratamineto</h3>
+            <p id="tratR">En la mayor parte de los casos basta con un tratamiento sintomático de la fiebre, los dolores musculares y el dolor de cabeza, utilizando preferentemente paracetamol.
+
+                    Es aconsejable el reposo relativo y una buena hidratación. En los últimos años se han desarrollado algunos fármacos antivirales específicos para el virus de la gripe, primero amantadina y rimantadina, y, más recientemente, zanamivir y oseltamivir.
+                    </p>
+            <h3>Medicamento</h3>
+            <p id="medR">
+                    Paracetamol
+                    Antigripales
+                    
+            </p>
+            <a href="index.html" id=""><div class="boton-regreso">Inicio</div></a>
+        </div>
+        <div class="body-result-isq">
+            <div class="result-esp">
+                <div class="result-esp-mini">
+                    Porcentaje segun las enfermedades seleccionadas.
+                    <div class="cont-circulo">
+                        <p id="enf1">Gripe</p>
+                        <div class="circulo circulo1" id="probEnf1">15%</div>
+                        <p id="enf2">Neumonia</p>
+                        <div class="circulo circulo2" id="probEnf2">50%</div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>-->
+				<!--<div style="text-align: center; width: 100%; height: 10vh; background-color: bisque;"></div>-->
+			</div>
+    <div class="check-enf" id="check-enf">
+        <h2>Selecciona 2 enfermades:</h2>
+            <form action="" name="form_name" id="form_name">
+                    <label>
+                        <input type="checkbox" name="check[]" id="cbox1" value="Gripe"> Gripe
+                    </label>
+                    <br>
+                    <label>
+                            <input type="checkbox" name="check[]" id="cbox2" value="Asma"> Asma
+                    </label>
+                    <br>
+                    <label>
+                            <input type="checkbox" name="check[]" id="cbox3" value="Neumonia"> Neumonia
+                    </label>
+                    <br>
+                    <label>
+                            <input type="checkbox" name="check[]" id="cbox4" value="Bronquitis"> Bronquitis
+                    </label>
+                    <br>
+                    <label>
+                            <input type="checkbox" name="check[]" id="cbox5" value="Enfisema"> Enficema
+                    </label>
+                    <br>
+                    <label>
+                            <input type="checkbox" name="check[]" id="cbox6" value="Faringitis"> Faringitis
+                    </label>
+                    <br>
+                    <label>
+                            <input type="checkbox" name="check[]" id="cbox7" value="Pleuritis"> Pleuritis
+                    </label>
+                    <br>
+                    <label>
+                            <input type="checkbox" name="check[]" id="cbox8" value="Resfriado"> Resfriado
+                    </label>
+                    <br>
+                    <label>
+                            <input type="checkbox" name="check[]" id="cbox9" value="Laringitis"> Laringitis
+                    </label>
+                    <br>
+                    <label>
+                            <input type="checkbox" name="check[]" id="cbox10" value="Tuberculosis"> Tuberculosis
+                    </label>
+                    <br>
+                    <label>
+                            <input type="checkbox" name="check[]" id="cbox11" value="Sinusitis"> Sinusitis
+                    </label>
+                    <br>
+                    <label>
+                            <input type="checkbox" name="check[]" id="cbox12" value="Amigdalitis"> Amigdalitis
+                    </label>
+                    <br>
+                    </form>
+                    <input type="button" onclick='printChecked()' class="botonIV" value="Imprimir valores"/>
+                    <!--Funcion para que no pueda seleccionar mas de dos elementos-->
+                    
+                    <script>
+                            type="text/javascript">checkBoxLimit()
+                       function checkBoxLimit() {
+                       var checkBoxGroup = document.forms['form_name']['check[]'];			
+                       var limit = 2;
+                       for (var i = 0; i < checkBoxGroup.length; i++) {
+                           checkBoxGroup[i].onclick = function() {
+                               var checkedcount = 0;
+                               for (var i = 0; i < checkBoxGroup.length; i++) {
+                                   checkedcount += (checkBoxGroup[i].checked) ? 1 : 0;
+                               }
+                               if (checkedcount > limit) {
+                                   console.log("You can select maximum of " + limit + " checkboxes.");
+                                   alert("Solo puedes seleccionar " + limit + " enfermedades.");						
+                                   this.checked = false;
+                               }
+                           }
+                       }
+                   }    
+                       </script>
+
+
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script> 
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
